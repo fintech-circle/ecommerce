@@ -58,22 +58,11 @@ define([
                     displayName: gettext('Free (Audit)'),
                     helpText: gettext('Free audit track. No certificate.')
                 },
-                verified: {
-                    type: 'verified',
-                    displayName: gettext('Verified'),
-                    helpText: gettext('Paid certificate track with initial verification and Verified Certificate')
-                },
                 professional: {
                     type: 'professional',
                     displayName: gettext('Professional Education'),
                     helpText: gettext('Paid certificate track with initial verification and Professional ' +
                         'Education Certificate')
-                },
-                credit: {
-                    type: 'credit',
-                    displayName: gettext('Credit'),
-                    helpText: gettext('Paid certificate track with initial verification and Verified Certificate, ' +
-                        'and option to purchase credit')
                 }
             },
 
