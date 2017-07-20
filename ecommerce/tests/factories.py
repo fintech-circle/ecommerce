@@ -38,4 +38,4 @@ class SiteConfigurationFactory(factory.DjangoModelFactory):
 
 class StockRecordFactory(OscarStockRecordFactory):
     product = factory.SubFactory(ProductFactory)
-    price_currency = 'USD'
+    price_currency = 'GBP'

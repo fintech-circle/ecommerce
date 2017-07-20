@@ -25,7 +25,7 @@ from ecommerce.extensions.payment.constants import CARD_TYPES
 from ecommerce.extensions.payment.helpers import sign
 from ecommerce.extensions.payment.processors.cybersource import Cybersource
 
-CURRENCY = 'USD'
+CURRENCY = 'GBP'
 Basket = get_model('basket', 'Basket')
 Order = get_model('order', 'Order')
 PaymentEventType = get_model('order', 'PaymentEventType')
