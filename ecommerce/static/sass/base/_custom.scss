@@ -123,7 +123,126 @@ form-create .list-input .field input, .form-create .list-input .field textarea, 
 }
 
 
- 
+ .banner-main-page {
+    position: relative;
+    width: 100%;
+    .background {
+        width: 100%;
+        min-height: 400px;
+        background-size: cover;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        @media #{$screen-sm} {
+            background-position: 75% 0;
+        }
+        &.first {
+            background-image: url("../../images/become_lecturer.jpg");
+        }
+    }
+    img {
+        opacity: 0.9;
+        margin: 0 auto;
+    }
+    
+    .carousel-caption {
+        left: 25%;
+        right: 25%;
+        bottom: 28%;
+        text-align: center;
+        text-shadow: none;
+        @media #{$screen-md} {
+            left: 15%;
+            right: 15%;
+            bottom: 12%;
+        }
+        @media #{$screen-sm} {
+            left: 7%;
+            right: 7%;
+            bottom: 3%;
+        }
+        @media #{$screen-xs} {
+            left: 5%;
+            right: 5%;
+            bottom: 15%;
+        }
+        @media #{$screen-xxs} {
+            left: 5%;
+            right: 5%;
+            bottom: 30%;
+        }
+        h2 {
+            margin-bottom: 30px;
+            font-family: 'Open Sans';
+            font-size: 52px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #ffffff;
+            @media #{$screen-sm} {
+                margin-bottom: 20px;
+                font-size: 36px;
+            }
+            @media #{$screen-xs} {
+                margin-bottom: 20px;
+            }
+            @media #{$screen-xs} {
+                margin-bottom: 10px;
+                font-size: 36px;
+            }
+            @media #{$screen-xxs} {
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            span {
+                border-bottom: 4px solid #fd7400;
+                font-size: 52px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-align: left;
+                color: #ffffff;
+                @media #{$screen-xs} {
+                    font-size: 36px;
+                }
+                @media #{$screen-xxs} {
+                    font-size: 20px;
+                }
+            }
+        }
+        span {
+            font-family: 'Open Sans';
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-align: left;
+            color: #ffffff;
+            @media #{$screen-xs} {
+                font-size: 12px;
+            }
+        }
+    }
+    .btn-orange {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px 15px;
+        border-radius: 60px;
+        background-color: #fd7400;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: 0 none;
+        &:hover {
+            color: #ffffff;
+            border: 0 none;
+        }
+    }
+}
+
 
 header {
 
@@ -290,125 +409,6 @@ header {
 
 
 
-.banner-main-page {
-    position: relative;
-    width: 100%;
-    .background {
-        width: 100%;
-        min-height: 400px;
-        background-size: cover;
-        background-position: center 0;
-        background-repeat: no-repeat;
-        @media #{$screen-sm} {
-            background-position: 75% 0;
-        }
-        &.first {
-            background-image: url("../../images/become_lecturer.jpg");
-        }
-    }
-    img {
-        opacity: 0.9;
-        margin: 0 auto;
-    }
-    
-    .carousel-caption {
-        left: 25%;
-        right: 25%;
-        bottom: 28%;
-        text-align: center;
-        text-shadow: none;
-        @media #{$screen-md} {
-            left: 15%;
-            right: 15%;
-            bottom: 12%;
-        }
-        @media #{$screen-sm} {
-            left: 7%;
-            right: 7%;
-            bottom: 3%;
-        }
-        @media #{$screen-xs} {
-            left: 5%;
-            right: 5%;
-            bottom: 15%;
-        }
-        @media #{$screen-xxs} {
-            left: 5%;
-            right: 5%;
-            bottom: 30%;
-        }
-        h2 {
-            margin-bottom: 30px;
-            font-family: 'Open Sans';
-            font-size: 52px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-align: center;
-            color: #ffffff;
-            @media #{$screen-sm} {
-                margin-bottom: 20px;
-                font-size: 36px;
-            }
-            @media #{$screen-xs} {
-                margin-bottom: 20px;
-            }
-            @media #{$screen-xs} {
-                margin-bottom: 10px;
-                font-size: 36px;
-            }
-            @media #{$screen-xxs} {
-                margin-bottom: 10px;
-                font-size: 20px;
-            }
-            span {
-                border-bottom: 4px solid #fd7400;
-                font-size: 52px;
-                font-weight: bold;
-                letter-spacing: 1px;
-                text-align: left;
-                color: #ffffff;
-                @media #{$screen-xs} {
-                    font-size: 36px;
-                }
-                @media #{$screen-xxs} {
-                    font-size: 20px;
-                }
-            }
-        }
-        span {
-            font-family: 'Open Sans';
-            font-size: 20px;
-            letter-spacing: 1px;
-            text-align: left;
-            color: #ffffff;
-            @media #{$screen-xs} {
-                font-size: 12px;
-            }
-        }
-    }
-    .btn-orange {
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 16px 15px;
-        border-radius: 60px;
-        background-color: #fd7400;
-        font-family: 'Open Sans';
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: bold;
-        letter-spacing: 1.2px;
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase;
-        border: 0 none;
-        &:hover {
-            color: #ffffff;
-            border: 0 none;
-        }
-    }
-}
 
 }
 
