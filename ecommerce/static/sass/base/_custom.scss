@@ -120,33 +120,8 @@ form-create .list-input .field input, .form-create .list-input .field textarea, 
     }
 }
 
-.header-rest {
-    display: block;
-}
 
-.header-main {
-    display: none;
-}
-
- .banner-main-page {
-        display: none;
-    }
-
-.view-howitworks {
-
-
-
-   .header-rest {
-        display: none;
-    }
-
-    .header-main {
-        display: block;
-    }
-
-    .banner-main-page {
-        display: block;
-    }
+ 
 
 header {
 
@@ -310,7 +285,7 @@ header {
             }
         }
     }
-}
+
 
 
 .banner-main-page {
@@ -449,34 +424,9 @@ header {
 }
 
 
-.header-global .wrapper-header-new .list-inline .item {
-    font-weight: 600;
-    display: inline-block;
-    font-size: 0.875em;
-    text-transform: uppercase;
-}
 
-.header-global .wrapper-header-new ol.list-inline li a {
-    margin: 0;
-    padding: 13px 15px;
-    font-family: 'Open Sans';
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-align: left;
-    background: 0 none;
-    border: 0 none;
-    color: #000000;
-    
-}
 
-.wrapper-header-new {
-    max-width: 1140px;
-    height: auto;
-    padding: 0 0 15px 0px;
-    width: auto;
-    display: flex;
-}
+
 
 footer#footer-edx-v3 {
 
