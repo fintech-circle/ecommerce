@@ -82,9 +82,11 @@ form-create .list-input .field input, .form-create .list-input .field textarea, 
 
 }
 
+.logo-header {
+    margin: 0px;
+}
 
 .new-course-button {
-    padding: 14px 25px !important;
     border-radius: 30px !important;
     background-color: #fd7400 !important;
     color: #fff !important;
@@ -293,8 +295,6 @@ header {
     .background {
         width: 100%;
         min-height: 400px;
-        //background-color: rgba(0, 0, 0, 0);
-        //background-image: linear-gradient(180deg, #32325c, rgba(34, 52, 99, 0)), url("/public/img/hero-background_v2.jpg");
         background-size: cover;
         background-position: center 0;
         background-repeat: no-repeat;
@@ -302,13 +302,13 @@ header {
             background-position: 75% 0;
         }
         &.first {
-            background-image: url("../images/become_lecturer.jpg");
+            background-image: url("../../images/become_lecturer.jpg");
         }
         &.second {
-            background-image: url("../images/banner_become_enterprenour.jpg");
+            background-image: url("../../images/banner_become_enterprenour.jpg");
         }
         &.third {
-            background-image: url("../images/banner_future_finance.jpg");
+            background-image: url("../../images/banner_future_finance.jpg");
         }
     }
     img {
