@@ -292,6 +292,7 @@ header {
 
 .banner-main-page {
     position: relative;
+    width: 100%;
     .background {
         width: 100%;
         min-height: 400px;
@@ -304,24 +305,12 @@ header {
         &.first {
             background-image: url("../../images/become_lecturer.jpg");
         }
-        &.second {
-            background-image: url("../../images/banner_become_enterprenour.jpg");
-        }
-        &.third {
-            background-image: url("../../images/banner_future_finance.jpg");
-        }
     }
     img {
         opacity: 0.9;
         margin: 0 auto;
     }
-    .carousel-indicators {
-        text-align: right;
-        li {
-            border: 1px solid #fff;
-            margin: 1px;
-        }
-    }
+    
     .carousel-caption {
         left: 25%;
         right: 25%;
