@@ -1,15 +1,16 @@
 {% load i18n %}
 {% load staticfiles %}
-<header role="banner" class="primary header-global">
 
-    <div class="wrapper wrapper-l wrapper-header-new">
-      <h1 class="branding">
-        <a class="brand-link" href="/">
-          <img class="brand-image" src="/static/3682130c4e/images/ftci-logo-black.b4df90910630.png" alt="E-commerce center">
-        </a>
+<header id="global-navigation" class="header-global header-main" >
+    <nav class="wrapper-header" aria-label="${_('Global')}">
+      <h1 class="hd logo-header">
+        <div class="logo">
+          <a href="${marketing_link('ROOT')}">
+          </a>
+        </div>
       </h1>
-
-      <ol class="list-inline nav-global">
+      
+       <ol class="list-inline nav-global">
         
             <li class="item nav-global-01">
               <a href="https://institute.fintechcircle.com/courses">Courses</a>
@@ -23,24 +24,38 @@
             <li class="item nav-global-04">
               <a href="https://institute.fintechcircle.com/contact">Contact</a>
             </li>
-            
-            
-        
       </ol>
 
-    </div>
+  </div>
 
-    <div class="wrapper wrapper-r">
-      <nav class="nav-not-signedin" aria-label="Account">
-        <h2 class="sr-only">Account Navigation</h2>
-        <ol>
-          <li class="nav-item nav-not-signedin-signin">
-            <a class="action action-signin" href="/signin">Sign In</a>
-          </li>
-              <li class="nav-item nav-not-signedin-signup">
-                <a class="btn-neutral btn-register btn-orange btn-normalize" href="/signup">REGISTER</a>
-              </li>
-        </ol>
-      </nav>
-    </div>
-  </header>
+  
+  </nav>
+</header>   
+
+<div id="carousel-example-generic" class="carousel slide banner-main-page" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+       
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <!--<img src="${static.url("images/banner01.png")}" alt="...">-->
+                  <div class="background first"></div>
+                  <div class="carousel-caption">
+                      <h2><span>Fintech</span>Circle Institiute</h2>
+                  </div>
+              </div>
+             
+          </div>
+          <!--<a href="" title="" class="btn btn-orange">Find courses</a>-->
+      </div>
+      <script type="text/javascript">
+          $('.carousel').carousel({
+              interval: 15000
+          })
+      </script>
+
+
