@@ -137,7 +137,7 @@
                 </div>
             {% endif %}
 
-            <div class="pull-right payment-buttons" data-basket-id="{{ basket.id }}">
+            <div class="pull-right payment-buttons new-course-button" data-basket-id="{{ basket.id }}">
                 {% if free_basket %}
                     <a href="{% url 'checkout:free-checkout' %}"
                        data-track-type="click"
@@ -153,7 +153,7 @@
                                 data-track-category="checkout"
                                 data-processor-name="{{ processor.NAME|lower }}"
                                 data-track-checkout-type="hosted"
-                                class="btn payment-button"
+                                class="btn payment-button new-course-button"
                                 id="{{ processor.NAME|lower }}">
                             {% if processor.NAME == 'cybersource' %}
                                 {% trans "Checkout" %}

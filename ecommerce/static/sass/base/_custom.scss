@@ -479,6 +479,11 @@ header {
 }
 
 footer#footer-edx-v3 {
+
+    .legal-links, .about-links {
+        padding:0px !important;
+    }
+    
     &.footer-main {
         //background: url("../images/footer-background.png") top left repeat!important;
         background: none;
